@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Play', sans-serif;
+}
+
+h1 {
+  color:green;
+  text-align: center;
+} 
+
+p {
+  color: #0ced1b;
+}
+
+#compinfo {
+  margin-left: 165px;
+}
+
+#quantuminfo {
+  margin-left:325px;
+}
+
+#superinfo {
+  margin-left: 275px;
+}
+
+#h2quan {
+  text-align: center;
+  color: #b7c10d;
+}
+
+#h3quan {
+  text-align: center;
+}
+
+#h1comp {
+  color: #b7c10d;
+}
+
+#h3sup {
+  text-align: center;
+}
+#h2sup {
+  text-align: center;
+  color: #b7c10d;
+}
+
+
+span {
+  color: red;
+}
+
+table, th,\ td {
+  border: 1px solid black;
+}
+table {
+  width: 500px;
+  float:right;
+  margin-top: 0px;
+  background-color: #b7c10d;
+}
+
+td {
+  text-align:left;
+}
+
+img {
+  float: left;
+}
+
+body {
+  background-image: url("images/backgroundimage.jpg");
+  background-repeat: repeat;
+  font-family: 'Lato', sans-serif;
+}
+
+#nav {
+  float:left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color:#f2f2f2;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+#nav li {
+  float:left;
+}
+
+
+
+#nav li a {
+  display: block;
+  padding: 5px 10px;
+  border-right: 1px solid #ccc;
+}
+
+#nav li a:hover {
+  background-color: #fff;
+  color: #c00;
+}
+
+#computers {
+  border-style:dotted;
+  border-color:green;
+}
+
+#quantum {
+  border-style:dotted;
+  border-color:green;
+}
+
+#footer {
+  color: #0ced1b;
+}
+
+#super {
+  border-style:dotted;
+  border-color:green;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #c00;
+}
+
+a:visited {
+  background-color: #fff;
+  color: red;
+}
+
+#comp {
+  color: #b7c10d;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="author" content="">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	
+	<meta name="description" content="BlackTie.co - Free Handsome Bootstrap Themes" />	    
+	<meta name="keywords" content="themes, bootstrap, free, templates, bootstrap 3, freebie,">
+	<meta property="og:title" content="">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
+	
+	
+	
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	
+	<link rel="prefetch" href="images/zoom.png">
+	<title>Project 3</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">\
+    
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-fixed-top" data-activeslide="1">
+		<div class="container">
+		
+			<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav row">
+					<li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="index.html" title="Next Section"><span class="icon icon-home"></span> <span class="text">HOME</span></a></li>
+				<div class="row">
+					<div class="col-sm-2 active-menu"></div>
+				</div>
+			</div><!-- /.nav-collapse -->
+		</div><!-- /.container -->
+	</div><!-- /.navbar -->
+	
+	
+	
+	<div id="arrows">
+		<div id="arrow-up" class="disabled"></div>
+		<div id="arrow-down"></div>
+		<div id="arrow-left" class="disabled visible-lg"></div>
+		<div id="arrow-right" class="disabled visible-lg"></div>
+	</div><!-- /.arrows -->
+	
+	
+	<!-- === MAIN Background === -->
+	<div class="slide story" id="slide-1" data-slide="1">
+		<div class="container">
+			<div id="home-row-1" class="row clearfix">
+				<div class="col-12">
+					<h1 class="font-semibold">Fortini - Klein - Grant <span class="font-thin">DESIGN</span></h1>
+					<h4 class="font-thin">We have developed a <span class="font-semibold">professional postcard creator  </span></h4>
+					<br>
+					<br>
+				</div><!-- /col-12 -->
+			</div><!-- /row -->
+			<div id="home-row-2" class="row clearfix">
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src="images/s02.png"></div><span>PROFESSIONAL</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="3"><img src="images/s01.png"></div><span>FREE</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="images/s03.png"></div><span>SIMPLE</span></div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide1 -->
+  
+  <div id="postcardCreator"><h2>CHECK OUT OUR POSTCARD CREATOR BELOW!</h2></div><br><br>
+	<div class="container">    
+		<div class="row">
+			<div id="formParent" class="col-md-6 col-md-offset-3">
+				<form id="form" class="form-horizontal" method="POST" action="javascript:submit()">
+                    <div class="form-group">
+                        <label for="title" class="control-label col-xs-2">Title</label>
+                        <div class="col-xs-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="fa fa-header fa-fw"></span></span>
+                                <input type="text" class="form-control" id="title" name="title" 
+                            maxlength="20" size="20" value="" required placeholder="Summer Vacation" autofocus>
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div class="form-group">
+                        <label for="text" class="control-label col-xs-2">Text</label>
+                        <div class="col-xs-10">
+                            <textarea class="form-control" id="text" name="text" maxlength="140" placeholder="140 characters" required></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" id="imageLoaderButton">
+                        <label class="sr-only" for="original">Original Image</label>
+                        <canvas id="original" name="original"></canvas>
+                        <input type="file" class="col-md-offset-1" id="imageLoader" name="imageLoader" accept="image/*">
+                    </div>
+                    
+    
+                    
+                    <div class="form-group" id="filterPhotoButton">
+                        <h3>Filter Photo</h3>
+                        <div class="checkbox-inline">
+                            <label for="sinCity">SinCity</label>
+                            <input type="radio" name="filter" id="filter1" value="sinCity" onclick="handleClick(this);">
+                        </div>
+                        <div class="checkbox-inline">
+                            <label for="greyscale">Greyscale</label>
+                            <input type="radio" name="filter" id="filter2" value="greyscale" onclick="handleClick(this);">
+                        </div>
+                        <div class="checkbox-inline">
+                            <label for="lomo">Lomo</label>
+                            <input type="radio" name="filter" id="lomo" value="lomo" onclick="handleClick(this);">
+                        </div>
+                        <div class="checkbox-inline">
+                            <label for="pinhole">Pinhole</label>
+                            <input type="radio" name="filter" id="pinhole" value="pinhole" onclick="handleClick(this);">
+                        </div>
+                    </div>
+                  <!-- === Giving the user the ability to change the color of the text on the postcard === -->
+                  <div class="form-group" id="colorTextButton">
+                    <h3 id="textColorHeader">Text Color</h3>
+                    <div class="checkbox-inline">
+                            <label for="red">Red</label>
+                            <input type="radio" name="color" id="color1" value="red" onclick="changeColor(this);">
+                        </div>
+                        <div class="checkbox-inline">
+                            <label for="blue">Blue</label>
+                            <input type="radio" name="color" id="color2" value="blue" onclick="changeColor(this);">
+                        </div>
+                        <div class="checkbox-inline">
+                            <label for="green">Green</label>
+                            <input type="radio" name="color" id="color3" value="green" onclick="changeColor(this);">
+                        </div>
+                        <div class="checkbox-inline">
+                            <label for="purple">Purple</label>
+                            <input type="radio" name="color" id="color4" value="purple" onclick="changeColor(this);">
+                        </div>
+                  </div>
+                   
+                    <div class="form-group">
+                        <h2 id="previewImage">Preview Image</h2>
+                        <canvas id="preview" name="preview">
+                        </canvas>
+                    </div>
+                    
+                    <input type="submit" class="btn btn-primary col-md-offset-1" id="submitButton">
+				</form>
+                
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript placed at bottom for faster page loadtimes. -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	<!-- Caman JS -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script> -->
+	<script src="caman.full.min.js"></script>
+	
+	<script src="canvas.js"></script>
+
+</body>
+</html>
